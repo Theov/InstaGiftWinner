@@ -11,7 +11,8 @@ public class Controller {
     private ScheduledService scheduledService;
 
     @RequestMapping("/")
-    public void entryPoint(){
+    public String entryPoint(){
         scheduledService.hello();
+        return "Hello";
     }
 }
